@@ -41,7 +41,7 @@ OOPS-in-cxx/
    ```bash
    git clone https://github.com/Fatima-progmmer/OOPS-in-cxx.git
    cd OOPS-in-cxx
-````
+   ```
 
 2. Compile any `.cpp` file using a C++ compiler like `g++`:
 
@@ -60,9 +60,3 @@ OOPS-in-cxx/
 
 This repository is for educational purposes. Feel free to use it for learning or academic reference.
 
----
-
-```
-
-Would you like me to auto-generate a table of contents from your folders or organize program titles from each chapter as well?
-```
