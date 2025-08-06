@@ -1,14 +1,39 @@
 #include<iostream>
-#include<conio.h>
-#include<string>
-#include<stdio.h>
 using namespace std;
+struct empolyee
+{
+	string joining_date;
+	 string employee_name;
+	 string desgination;
+};
+void taken()
+{
+	empolyee data[5];
+	for(int i=1;i<=5;i++)
+	{
+		cout << "\n\t"  << i<< " employee data" << endl;
+	cout << "Enter " << i << " empolyee name :";
+	cin >>data[i].employee_name;
+	cout << "Enter " << i << " empolyee joining date :";
+	cin >>data[i].joining_date ;
+	cout << "Enter " << i << " empolyee designation :";
+	cin >> data[i].desgination ;
+	}
+}
+void display()
+{
+	empolyee data[5];
+	for(int i=1;i<=5;i++)
+	{
+		cout << "\n\t" << i << " employee data " << endl;
+	cout<< i << " empolyee name :" << data[i].employee_name ;
+	cout << i << " empolyee joining date :" <<data[i].joining_date ;
+	cout << i << " empolyee designation :" <<data[i].desgination ;
+	}
+}
 int main()
 {
-	char a[10]={'t','a','n','z','e','e','l','a'};
-	char b[10]={'F','a','t','i','m','a'};
-	cout << "cocerntationing the string .";
-	strcat(a,b);
-	cout << a;
+	taken();
+	display();
 	return 0;
 }

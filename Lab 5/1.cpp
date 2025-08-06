@@ -1,17 +1,30 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-int main()
+struct x
 {
-	int a;
-	int tool[5];
-	cout << "Enter five values ;" << endl;
-	for(int y=1;y<=5;y++)
-	cin >> tool[y];
-	for(int y=1;y<=5;y++)
-	{
-		if(tool[y]>a)
-		a=tool[y];
-	}
-	cout << " The greater number is " << a ;
+	int x1;
+	int x2;
+};
+struct y
+{
+	int y1;
+	int y2;
+};
+int main ()
+{
+	x variable;
+	y angle;
+	cout << "Enter the value of point x1 :";
+	cin >> variable.x1;
+	cout << "Enter the value of point x2 :";
+	cin >> variable.x2;
+	cout << "Enter the value of point y1 :";
+	cin >> angle.y1;
+	cout << "Enter the value of point y2 :";
+	cin >> angle.y2;
+	 double square_root;
+	 square_root = sqrt((variable.x2-variable.x1)^2+(angle.y2-angle.y1)^2);
+	 cout << "The distance of the points is " << square_root;
 	return 0;
 }
