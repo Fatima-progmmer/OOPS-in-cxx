@@ -1,21 +1,26 @@
 #include<iostream>
 using namespace std;
-struct meter
-{
-	float feet;
-	float inches;
-};
 int main()
 {
-	meter call;
-	cout << "Enter the inches :";
-	cin >> call.inches;
-	cout <<  "Enter the feet :";
-	cin >> call.feet;
-	call.inches*=0.3048;
-	call.feet*=0.025;
-	float metr;
-	metr = call.inches+call.feet;
-	cout << "The length is " << metr << " meter";
+	int aa[5];
+	cout << "Enter arrays values \n";
+	for (int x = 1; x <= 5; x++)
+	cin >> aa[x];
+	cout << "sort in ascending order " << endl;
+	for (int x = 1; x <= 5; x++)
+		{
+			for (int j = 1 + x; j <= 5; j++)
+			{
+				if (aa[x] > aa[j])
+				{
+					int temp;
+					temp = aa[x];
+					aa[x] = aa[j];
+					aa[j] = temp;
+				}
+			}
+		}
+	for (int x = 1; x <= 5; x++)
+	cout << aa[x] << "	";
 	return 0;
 }
