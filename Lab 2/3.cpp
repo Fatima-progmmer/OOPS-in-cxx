@@ -1,16 +1,16 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-	int num;
-	int total=0;
-	cout <<"Enter to a limit :";
-	cin >> num;
-	for(int i=1;i<=num;i++)
-	{
-		if(i%2==0)
-		total+= i;
-	}
-	cout << "The total of all even number between 1 to " << num << " is " << total << endl;
+	int n,fact;
+	cout << "Enter number:";
+	cin >> n;
+	for(int i=1;i<=n,i++)
+	fact=n*fact;
+	cout << "The factorial of number is :" << fact <<  endl;
 	return 0;
 }
+
+//coded by Tanzeela
+  //Do again and again
+

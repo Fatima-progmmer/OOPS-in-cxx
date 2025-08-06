@@ -1,18 +1,15 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-	int long num;
-	cout << "Enter a  number=";
-	cin >> num;
-	int long rever = 0;
-	while (num!= 0)
+	int n=5;
+	for(int i=1;i<=n;i++)
 	{
-		rever = rever * 10;
-		rever = rever + num % 10;
-		num = num/ 10;
+		for(int j=1;j<=i;j++)
+		{
+		cout<< j ;
+		}
+	cout << endl;
 	}
-	 rever;
-	cout << "After swapping the number :" << rever;
 	return 0;
-}
+	}
