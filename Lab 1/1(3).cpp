@@ -7,4 +7,4 @@ int main()
 	cin >> c;
 	cout << " The ASCII value of " << c << " is " << int(c);
 	return 0;
-	}
+}
